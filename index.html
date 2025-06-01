@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keuangan RPG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Karakter: Joko</h1>
+    <img id="charImage" src="lv0.png" alt="Karakter Level 0" class="char-img" />
+    <h2 id="level">Level: 0</h2>
+    <p id="xp">XP: Rp 0 / Rp 1000000</p>
+    <progress id="xpBar" value="0" max="1000000"></progress>
+
+    <div class="buttons">
+      <button onclick="tambahUang()">+ Tambah Uang</button>
+      <button onclick="kurangUang()">- Kurang Uang</button>
+    </div>
+
+    <h3>Riwayat Transaksi</h3>
+    <ul id="riwayatList" class="riwayat-list"></ul>
+
+    <h3>Statistik Keuangan</h3>
+    <canvas id="grafikTransaksi" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
